@@ -1,0 +1,365 @@
+*, *:before, *after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+}
+
+@font-face {
+	font-family: "Segoe UI";
+	src: url(../fonts/Segoe_UI.ttf);
+}
+@font-face {
+	font-family: "Samo Sans";
+	src: url(../fonts/SamoSansPro-Hair.ttf);
+}
+@font-face {
+	font-family: "St Ryde Regular";
+	src: url(../fonts/stryde-regular.otf);
+}
+@font-face {
+	font-family: "Sofia Pro Light";
+	src: url("../fonts/Sofia Pro Light.ttf");
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	/*height: 96vh; */
+}
+
+header {
+	padding: 0;
+	width: 1017px;
+}
+
+
+.logo {
+	/*background-color: red;*/
+	/*display: flex;*/
+	/*margin-left: 7rem;
+	padding: 0;*/
+}
+
+
+
+.logo-line {
+	background-color: #a292b3;
+	height: .5rem;
+	margin-bottom: 1.5rem;
+	width: 100%
+}
+
+.logo-left {
+	display: flex;
+	align-items: center;
+}
+
+.text-logo h2 {
+	text-transform: uppercase; 
+	font-family: "Samo Sans";
+	font-weight: 900;
+	color: #a292b3;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	padding: 0 auto;
+	padding-left: 1rem;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.header-menu li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right:  4.3rem;
+}
+
+.header-menu li:last-child {
+	padding-right: 0;
+}
+
+.header-menu li a {
+	text-decoration:  none;
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	color: #545454;
+	font-family: "Segoe UI";
+}
+
+.header-menu img {
+	margin-right: .4rem;
+}
+
+.header-banner-wrapper {
+	/*padding-left: 0;*/
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*.header-banner-wrapper .header-wrapper {
+	padding-left: 14.75rem;
+}
+*/
+/*.header-banner-wrapper .content {
+	padding-left: 14.75rem;
+}
+*/
+
+
+
+.content {
+	/*flex: 1 0 auto;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.content-banner {
+	background-image: url(../images/main-content-image.png);
+	width: 63.5rem;
+	height: 30.3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.3rem;
+
+}
+
+.arrows {
+	background-color: #82699d;
+	height: 4rem;
+	width: 2.1rem;
+}
+
+.arrow-left {
+	background-image: url(../images/left-arrow.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.arrow-right {
+	background-image: url(../images/right-arrow.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.text-banner {
+	text-align: center;
+}
+
+.text-banner h2 {
+	/*opacity: 0.97;*/
+	text-shadow: -4px 5px 0 rgba(130, 105, 157, 0.75);
+	color: #ffffff;
+	font-family: "St Ryde Regular";
+	font-size: 7.3rem;
+	font-weight: 400;
+	line-height: 0.9rem;
+	text-transform: uppercase;
+}
+
+.text-banner p {
+	text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.45);
+	color: #ffffff;
+	font-family: "Sofia Pro Light";
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 2.1rem;
+}
+
+.content-line {
+	height: 0.1rem;
+	width: 100%;
+	background-color: #bfbfbf;
+}
+
+.frame-wrapper {
+	width: 1017px;
+}
+
+.content-frame {
+	padding: .5rem 2rem;
+	text-align: center;
+	font-style: italic;
+	/*font-size: 1rem;*/
+/*	font-weight: 600;*/
+	color: #494848;
+	font-family: "Segoe UI";
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+}
+
+.content-frame strong {
+	color: #82699d;
+	font-family: "Segoe UI 8";
+	font-weight: 700;
+}
+
+
+.main-content {
+	display: flex;
+	width: 1017px;
+	padding: 2rem 0;
+	justify-content: space-between;
+
+}
+
+.main-content-article {
+	margin-left: 3rem;
+}
+
+.main-content-article h2 {
+	color: #505051;
+	font-family: "Segoe UI";
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2.2rem;
+}
+
+.main-content-article p {
+	color: #838383;
+	font-family: "Segoe UI";
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+}
+
+.read-more {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.read-more a{
+	display: inline-block;
+	margin-right: 0;
+	text-decoration: none;
+	color: #82699d;
+	font-family: "Segoe UI";
+	font-size: .9rem;
+	line-height: 2.2rem;
+	font-style: italic;
+
+}
+.read-more img {
+	width: 11px;
+	height: 7px;
+	margin-left: 0.5rem;
+}
+
+.shadow {
+	background-image: url(../images/circle_shadow.png);
+	position: relative;
+	width: 310px;
+	height: 311px;
+	/*opacity: 0.66;*/
+}
+
+.shadow:after {
+	content: "";
+	  position: absolute;
+	  top:5%;
+	  left: 6%;
+	  opacity: .7;
+	  z-index: 10;
+	  width: 271px;
+	  height: 271px;
+	  background: url("../images/circle.png");
+}
+
+.circle-image {
+	background-image: url(../images/circle.png);
+	width: 310px;
+	height: 311px;
+	opacity: 0.66;
+	z-index: 10;
+}
+
+.clients {
+	width: 1017px;
+	display: flex;
+	flex-direction: column;
+}
+
+.clients-title {
+	display: flex;
+	align-items: center;
+}
+
+.clients-title h2 {
+	margin-right: 0.4rem;
+	color: #000000;
+	font-family: "Segoe UI";
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 2.2rem;
+	text-transform: capitalize;
+}
+
+.clients-title h2 strong {
+	font-family: "Segoe UI 8";
+	font-weight: 700;	
+}
+
+
+.clients-logos {
+	width: 1017px;
+	background-color: #f5f5f5;
+	height: 4.3rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+.client-line {
+	height: 100%;
+	background-color: #e3e3e3;
+	width: 0.1rem;
+}
+
+footer {
+	flex-shrink: 0;
+	margin-top: 1.2rem;	
+}
+
+.footer-line {
+	width: 100%;
+	height: 0.5rem;
+	background-color: #82699d;
+}
+
+.footer-wrapper {
+	background-color: #e8e8e8;
+	height: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: space-around;
+	width: 7rem;
+}
+
+.footer-wrapper .footer-text{
+	color: #454242;
+	font-family: "Segoe UI";
+	font-size: 1rem;
+	padding: 2rem;
+}
