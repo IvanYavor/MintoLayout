@@ -31,23 +31,16 @@ body {
 .main {
 	display: flex;
 	flex-direction: column;
-	/*height: 96vh; */
+}
+
+.container {
+	max-width: 1017px;
 }
 
 header {
 	padding: 0;
 	width: 1017px;
 }
-
-
-.logo {
-	/*background-color: red;*/
-	/*display: flex;*/
-	/*margin-left: 7rem;
-	padding: 0;*/
-}
-
-
 
 .logo-line {
 	background-color: #a292b3;
@@ -108,17 +101,6 @@ header {
 	flex-direction: column;
 	align-items: center;
 }
-
-/*.header-banner-wrapper .header-wrapper {
-	padding-left: 14.75rem;
-}
-*/
-/*.header-banner-wrapper .content {
-	padding-left: 14.75rem;
-}
-*/
-
-
 
 .content {
 	/*flex: 1 0 auto;*/
