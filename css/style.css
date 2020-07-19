@@ -33,10 +33,6 @@ body {
 	flex-direction: column;
 }
 
-.container {
-	max-width: 1017px;
-}
-
 header {
 	padding: 0;
 	width: 1017px;
@@ -88,6 +84,13 @@ header {
 	font-size: 1.1rem;
 	color: #545454;
 	font-family: "Segoe UI";
+	transition: text-decoration .2s linear;
+}
+
+.header-menu li a:hover {
+	text-decoration: underline;
+	color: #a292b3;
+	
 }
 
 .header-menu img {
@@ -95,15 +98,14 @@ header {
 }
 
 .header-banner-wrapper {
-	/*padding-left: 0;*/
 	flex: 1 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+
 .content {
-	/*flex: 1 0 auto;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -125,18 +127,29 @@ header {
 	background-color: #82699d;
 	height: 4rem;
 	width: 2.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.arrow-left {
-	background-image: url(../images/left-arrow.png);
-	background-repeat: no-repeat;
-	background-position: center;
+.arrows img{
+	display: block;
+	margin: auto 0;
 }
 
-.arrow-right {
-	background-image: url(../images/right-arrow.png);
-	background-repeat: no-repeat;
-	background-position: center;
+.arrows:hover {
+	cursor: pointer;
+	border: 1px solid #000f33;
+}
+
+
+
+.arrow-left:hover {
+	border-left: 0;
+}
+
+.arrow-right:hover {
+	border-right: 0;
 }
 
 .text-banner {
@@ -144,7 +157,6 @@ header {
 }
 
 .text-banner h2 {
-	/*opacity: 0.97;*/
 	text-shadow: -4px 5px 0 rgba(130, 105, 157, 0.75);
 	color: #ffffff;
 	font-family: "St Ryde Regular";
@@ -177,8 +189,6 @@ header {
 	padding: .5rem 2rem;
 	text-align: center;
 	font-style: italic;
-	/*font-size: 1rem;*/
-/*	font-weight: 600;*/
 	color: #494848;
 	font-family: "Segoe UI";
 	font-size: 1.4rem;
@@ -236,6 +246,11 @@ header {
 	font-style: italic;
 
 }
+
+.read-more a:hover {
+	text-decoration: underline;
+}
+
 .read-more img {
 	width: 11px;
 	height: 7px;
